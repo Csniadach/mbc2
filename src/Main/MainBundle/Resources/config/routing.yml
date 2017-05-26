@@ -27,3 +27,7 @@ offre:
 searchOffres:
     pattern: /searchOffres
     defaults: { _controller: MainBundle:Offres:searchoffres }
+
+mentions_legales:
+    path:     /mentions_legales
+    defaults: { _controller: MainBundle:Default:mentions_legales }   

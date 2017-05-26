@@ -16,7 +16,10 @@ class DefaultController extends Controller
     {
         return $this->render('MainBundle:Default:layout\index.html.twig');
     }
-
+    public function mentions_legalesAction()
+    {
+        return $this->render('MainBundle:Default:mentions_legales.html.twig');
+    }
     public function contactAction()
     {
         $contact = new Contact();
