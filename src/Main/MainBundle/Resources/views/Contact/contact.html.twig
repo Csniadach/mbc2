@@ -10,16 +10,16 @@
 
           <form class="form-horizontal" action="{{ path('contact') }}" method="post"  {{ form_enctype(form) }} id="contact_form">
               {{ form_start(form) }}
-              {{ form_end(form) }}
-          </form>
+
+
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-         {{ form_widget(form.firstname) }}
+         {{ form_widget(form.lastname) }}
           <label for="icon_prefix">Nom</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-        {{ form_widget(form.lastname) }}
+        {{ form_widget(form.firstname) }}
           <label for="icon_telephone">Prénom</label>
         </div>
         <div class="input-field col s6">
@@ -45,17 +45,17 @@
         <div class="input-field col s12">
               <div class="file-field input-field">
                 <div class="btn">
-                  <span>joindre un fichier</span>
+                  <span>Joindre un Fichier</span>
                   <input type="file">
                 </div>
                 <div class="file-path-wrapper">
-                    {#{{ form_widget(form.media) }}#}
-                B</div>
+                    {{ form_widget(form.media) }}
+                </div>
               </div>
 
         </div>
-            <i class="material-icons right"></i>
-
+          {{ form_end(form) }}
+          </form>
     </div>
     </div>
   </div>

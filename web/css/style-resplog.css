@@ -31,6 +31,7 @@
 .marg-center {
     background: -webkit-gradient(linear,left bottom,right top, from(rgba(255, 255, 255, 0.35)),to(rgba(236, 197, 157, 0.43)));
     margin: 16vh auto;
+    margin-top: 0px!important;
     padding: 20px;
 }
 .background-img{
@@ -62,10 +63,10 @@
 
 .containerperso{
     width: 40%;
-} 
+}
 
 @media screen and (max-width: 640px) {
   .containerperso{
     width: 100%;
-} 
+}
 }

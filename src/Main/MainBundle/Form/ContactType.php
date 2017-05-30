@@ -38,11 +38,11 @@ class ContactType extends AbstractType
             ->add('subject', 'text', array('label' => 'Subject',
                                           'attr' => array('class' => 'validate',
                                           'placeholder' => 'Subject',)))
-//            ->add('media', new MediaType(), array('label' => 'media',
-//                                            'attr' => array('class' => 'validate',
-//                                            'placeholder' => 'media',)))
+            ->add('media', new MediaType(), array('label' => false,
+                                            'attr' => array('class' => 'validate',
+                                            'placeholder' => 'media',)))
             ->add('Send', 'submit', array('label' => 'Envoyer',
-                                          'attr' => array('class' => 'marg-center2 btn waves-effect waves-light degrade3 z-depth-2',
+                                          'attr' => array('class' => 'marg-center2 btn waves-effect waves-light degrade3 z-depth-2 material-icons right',
                                           'placeholder' => 'Envoyer',)));
 
     }
