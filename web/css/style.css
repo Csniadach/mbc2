@@ -5,49 +5,42 @@
  *
  * Made By MaterializeCSS.com
  */
-
-.img-nav{
-    width: 30%;
-}
 body{
     background-color: #e9ebee;
 }
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
 }
 .drop-width{
-	width: 150px !important;
+    width: 150px !important;
 }
 
 .color-nav-perso{
-	background: rgba(255, 255, 255, 0.8);
-	position: fixed;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
 }
 .color-a{
     color: #4a4a4a !important;
 }
-.color-a2{
-    color: #4a4a4a !important;
-}
 .color-a-fixe{
-	color: #ffffff !important;
+    color: #ffffff !important;
 }
 .color-nav-perso-fixe{
-	position: fixed;
-	background-color: #222D2B;
+    position: fixed;
+    background-color: #222D2B;
     color: #ffffff;
 }
 .nav-perso{
     z-index: 998;
-		padding: 10px 0;
-	height: 80px;
-	transition: .4s;
+    padding: 10px 0;
+    height: 80px;
+    transition: .4s;
 }
 
-video { 
+video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,10 +53,10 @@ video {
 }
 
 .position-perso{
-	margin-top: -350px;
+    margin-top: -350px;
 }
 .picto-w{
-	width: 100px;
+    width: 100px;
 }
 
 .modal {
@@ -95,7 +88,7 @@ video {
     top: 0px;
 }
 .img-back{
-	width: 1890px;
+    width: 1890px;
 }
 .index{
     z-index: -1000!important;
@@ -111,26 +104,26 @@ video {
 
 .chercher{
 
-    background: url(../img/ASC_equipements_campus06.JPG);
+    background: url(../img/cherche-emploi.png);
     background-size: cover;
     transition: .4s;
 }
 
 .offre{
 
-    background: url(../img/background.jpg);
+    background: url(../img/offre-emploi.png);
     background-size: cover;
     transition: .4s;
 }
 .chercher:hover{
 
-    background: url(../img/background.jpg);
+    background: url(../img/recherche-emploi-flou.png);
     background-size: cover;
 }
 
 .offre:hover{
 
-    background: url(../img/background.jpg);
+    background: url(../img/offre-emploi-flou.png);
     background-size: cover;
 }
 .picto-recherche{
@@ -159,27 +152,11 @@ video {
     text-align: justify;
 }
 .parallax-container {
-      height: 653px !important ;
+    height: 653px !important ;
 }
 .gray{
     color: rgb(56, 56, 56);
 }
-.degrade {
-    font-size: 50px;
-    background: -webkit-gradient(linear,left bottom,right top, from(#413d50),to(#cd4112));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.degrade2 {
-    font-size: 50px;
-    background: -webkit-gradient(linear,left bottom,right top, from(#413d50),to(#12cd36));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.degrade3 {
-    background: -webkit-gradient(linear,left bottom,right top, from(#413d50),to(#12cd36));
-}
-
 .marg-top{
     margin-top:50px;
     margin-bottom: 30px;
@@ -189,35 +166,35 @@ video {
 .m5ths,
 .l5ths,
 .xl5ths {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .row .col.s5ths {
-  width: 20%;
+    width: 20%;
 }
 
 @media only screen and (min-width: 601px) {
-  .row .col.m5ths {
-    width: 20%;
-  }
+    .row .col.m5ths {
+        width: 20%;
+    }
 }
 
 @media only screen and (min-width: 993px) {
-  .row .col.l5ths {
-    width: 18%;
-  }
+    .row .col.l5ths {
+        width: 18%;
+    }
 }
 
 @media only screen and (min-width: 1201px) {
-  .row .col.xl5ths {
-    width: 20%;
-  }
+    .row .col.xl5ths {
+        width: 20%;
+    }
 }
 
 .color-black{
     width: 100%;
     height: 100%;
-        background: -webkit-gradient(linear,left bottom,right top,from(#413d50),to(#cd4112));
+    background: -webkit-gradient(linear,left bottom,right top,from(#4f3d50),to(#12cd8c));
 }
 .font-size{
     font-size: 40px;
@@ -246,7 +223,7 @@ video {
     width: 20px;
 }
 .marg{
-    margin-top:15px; 
+    margin-top:15px;
 }
 .bold{
     font-weight: bold;
@@ -273,26 +250,46 @@ video {
     margin-top: 32px;
 }
 blockquote {
-        padding-left: 0.5rem !important;
+    padding-left: 0.5rem !important;
     border-left: 5px solid #4b943e !important;
 }
 .marg-bottom{
     margin-bottom: 30px;
 }
-.nav-scearh{
-        width: 60%;
-    margin: 0;
-    float: left;
-}
-.width-nav{
-    width: 70%;
+.white-op{
+    background: rgba(250,250,250,.8);
 }
 
-.input-field input[type=search] + label {
-    left: 28rem;
+.bouton3 {
+    color: #12cd8c;
+    text-align: center;
+    transition: .4s;
+    border-radius: 20px;
+    width: 25%;
+    padding: 6px 0 6px 0;
+    border: 2px solid #12cd8c;
+    margin-left: auto;
+    margin-right: auto;
 }
-.white-color{
-    background: rgba(255, 255, 255, 0.8);
+.bouton3:hover {
+    color: #4f3d50;
+    text-align: center;
+    transition: .4s;
+    border-radius: 20px;
+    width: 25%;
+    padding: 6px 0 6px 0;
+    border: 2px solid #4f3d50;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carrer{
+    padding: 20px;
+}
+.taille-p{
+    height:  100px;
+}
+.bottom{
+    padding-bottom: 20px!important;
 }
 /*
 
