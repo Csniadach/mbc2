@@ -3,177 +3,61 @@
 <link href="{{ asset('css/style-resplog.css') }}" rel="stylesheet">
 {% endblock %}
 {% block body %}
-
-    <!-- Contact -->
-    <div class="container white">
-        <div class="row">
-            <div class="container white">
-                <div class="col-lg-12">
-                    <div class="padder-t2">
-                        <h1>Contact</h1>
-                        <div class="horiz-divider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row padder-t padder-b">
-            <div class="container white">
-                <div class="col-lg-12">
-                    <!-- Form -->
-                    <form class="form-horizontal" action="{{ path('contact') }}" method="post"  {{ form_enctype(form) }} id="contact_form">
-                        {{ form_start(form) }}
-                        <fieldset>
-                            <!-- Text input First name -->
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-4">
-                                        <label class="control-label pull-right"><h4>{{ form_label(form.firstname) }}</h4></label>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 inputGroupContainer">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <!-- twig: WIDGET -->
-                                            {{ form_widget(form.firstname) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Text input Last name -->
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-4">
-                                        <label class="control-label pull-right" ><h4>{{ form_label(form.lastname) }}</h4></label>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 inputGroupContainer">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <!-- twig: WIDGET -->
-                                            {{ form_widget(form.lastname) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Text input Email -->
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-4">
-                                        <label class="control-label pull-right"><h4>{{ form_label(form.email) }}</h4></label>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 inputGroupContainer">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                            <!-- twig: WIDGET -->
-                                            {{ form_widget(form.email) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Text input-->
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-4">
-                                        <label class="control-label pull-right"><h4>{{ form_label(form.phone) }}</h4></label>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 inputGroupContainer">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                            {{ form_widget(form.phone) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Text area -->
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-4">
-                                        <label class="control-label pull-right"><h4>{{ form_label(form.message) }}</h4></label>
-                                    </div>
-                                    <div class="col-md-4 col-lg-5 inputGroupContainer">
-                                        <div class="input-group">
-                                            {{ form_widget(form.message) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <label class="col-md-4 col-lg-4 control-label"></label>
-                                    <div class="col-md-4 col-lg-4">
-                                        {{ form_end(form) }}
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-<!--new block-->
-<div class="containerperso marg-center z-depth-2">
+    <div class="containerperso marg-center z-depth-2">
     <div class="section">
       <div class="row">
       <h4 class="center degrade2 ">Contact</h4>
 
-        
+          <form class="form-horizontal" action="{{ path('contact') }}" method="post"  {{ form_enctype(form) }} id="contact_form">
+              {{ form_start(form) }}
+              {{ form_end(form) }}
+          </form>
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
+         {{ form_widget(form.firstname) }}
           <label for="icon_prefix">Nom</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_telephone" type="tel" class="validate">
+        {{ form_widget(form.lastname) }}
           <label for="icon_telephone">Prénom</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
+        {{ form_widget(form.email) }}
           <label for="email" data-error="wrong" data-success="right">Email</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_prefix" type="text" class="validate">
+         {{ form_widget(form.phone) }}
           <label for="icon_prefix">Téléphone</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">question_answer</i>
-          <input id="icon_prefix" type="text" class="validate">
+            {{ form_widget(form.subject) }}
           <label for="icon_prefix">Sujet</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            {{ form_widget(form.message) }}
           <label for="icon_prefix2">Votre message</label>
         </div>
         <div class="input-field col s12">
-          <form action="#">
               <div class="file-field input-field">
                 <div class="btn">
                   <span>joindre un fichier</span>
                   <input type="file">
                 </div>
                 <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
-                </div>
+                    {#{{ form_widget(form.media) }}#}
+                B</div>
               </div>
-            </form>
-          
+
         </div>
-        <!--progress bar for the upload thingy-->
-        <!--<div class="progress col s11 offset-s1">
-            <div class="indeterminate"></div>
-        </div>-->
-        
-        
-        
-      </div>
-        <button class="marg-center2 btn waves-effect waves-light degrade3 z-depth-2" type="submit" name="action">Envoyer
-            <i class="material-icons right">send</i>
-          </button>
+            <i class="material-icons right"></i>
+
     </div>
-  
+    </div>
   </div>
   <!--end of the new block-->
 {% endblock %}

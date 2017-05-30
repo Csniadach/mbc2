@@ -63,6 +63,11 @@ class Contact
      */
     private $subject;
 
+    /**
+     * @ORM\OneToOne(targetEntity="Main\MainBundle\Entity\Media", cascade={"persist","remove"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    public $media;
 
     /**
      * Get id
@@ -217,5 +222,29 @@ class Contact
     public function getFirstname()
     {
         return $this->firstname;
+    }
+
+    /**
+     * Set media
+     *
+     * @param \Main\MainBundle\Entity\Media $media
+     *
+     * @return Contact
+     */
+    public function setMedia(\Main\MainBundle\Entity\Media $media = null)
+    {
+        $this->media = $media;
+
+        return $this;
+    }
+
+    /**
+     * Get media
+     *
+     * @return \Main\MainBundle\Entity\Media
+     */
+    public function getMedia()
+    {
+        return $this->media;
     }
 }
